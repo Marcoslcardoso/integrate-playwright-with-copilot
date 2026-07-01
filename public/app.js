@@ -1,1 +1,7 @@
-// O Copilot vai te ajudar a implementar o handler do formulário no Step 4.
+const form = document.getElementById('newsletter-form');
+const status = document.querySelector('[role="status"]');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  status.textContent = 'Inscrição confirmada!';
+});
